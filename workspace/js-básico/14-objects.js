@@ -1,29 +1,22 @@
-// Un objeto es una colección de propiedades, y una propiedad es una asociación de key (nombre, o clave) y valores.
-
-var objecto = {}; // Object Literal Syntax 
-
-var miAuto = {
-    marca: "Toyota",  // key - value 
-    modelo: "Corolla",
-    annio: 2020,
-    detallesDelAuto: function() {   // Metodo de un objeto (una función dentro de un objeto)
-      return `Auto ${this.modelo} ${this.annio}`;
-  }
-};
-
-miAuto.annio 
-miAuto.modelo 
-
-miAuto.detallesDelAuto(); 
+var articulos = [
+    { nombre: "Bici", costo: 3000 },
+    { nombre: "Tv", costo: 2500 },
+    { nombre: "Libro", costo: 320 },
+    { nombre: "Celular", costo: 10000 },
+    { nombre: "Laptop", costo: 2000 },
+    { nombre: "Teclado", costo: 200 },
+    { nombre: "Audifono", costo: 222 }
+];
 
 
-// Función constructora 
+articulos.forEach(function(articulo) {
+    console.log(articulo.nombre);
+});
 
-function auto(marca, modelo, annio) {  // Creas una función con los parametros que va a recibir, 
-    this.marca = marca;   // Utilizamos el "this" para asignar valores a las propiedades del objeto 
-    this.modelo = modelo;
-    this.annio = annio;
-}
 
-var newAuto = new auto("Tesla", "Model 3", 2020);
+var articulosBaratos = articulos.some(function(articulo) {
+    return articulo.costo <= 700;
+});
 
+
+console.log(articulosBaratos);
