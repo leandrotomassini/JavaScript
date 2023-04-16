@@ -16,8 +16,34 @@ let palabras=['hola', 'estamos', 'en', 'YouTube'];
 
 let booleans=[true, true, false];
 
-console.log(numeros[0]+numeros[1]);
+console.log(numeros)
+console.log(numeros[6]);
 
-console.log(`La palabra "${palabras[3]}" tiene ${palabras[3].length} letras`);
+console.log(palabras);
+console.log(palabras[2]);
 
-console.log(numeros);
+console.log(`La palabras 1 "${palabras[1]}" tiene ${palabras[1].length} letras.`);
+
+
+
+
+
+
+
+
+
+
+Armada
+
+
+
+
+
+
+
+
+
+
+
+
+
